@@ -1,2 +1,37 @@
-ABCD
-EFGH
+--
+  -name: playbook
+   host: App server
+   become: true
+   become_user: root
+   task:
+     -name: Welcome to india
+      yum:
+
+      name: https
+      state: latest
+
+    -name:
+     service:
+
+     name: git repos Url
+
+     notify:
+     state: restart
+
+    -name: Hello one to one
+     pip: name=virtual
+
+    -name: activate virtual
+     command: virtual/deploy/devlopment/
+
+     name: run supervesiored
+     command: /bin/bash/ deploy/pleasedeploy/
+
+     name: begin flask
+     command: name flask_app state=start
+
+
+
+~
+
+      
