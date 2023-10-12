@@ -1,23 +1,4 @@
----
-- name: Example Playbook
-  hosts: <hosts>
-  vars:
-    variable1: value1
-    variable2: value2
-  tasks:
-  - name: Task 1
-    module: module_name
-    arguments:
-      argument1: value1
-      argument2: value2
-  - name: Task 2
-    module: module_name
-    arguments:
-      argument1: value1
-      argument2: value2
-  handlers:
-  - name: Handler 1
-    module: module_name
-    arguments:
-      argument1: value1
-      argument2: value2
+public class Simple{
+public static void main(String args[]){
+System.out.println("hello javatpoint");
+}}
