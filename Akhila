@@ -1,19 +1,23 @@
- stages {
-        stage('Build') { 
-            steps { 
-                sh 'make'
-            }
-        }
-        stage('Test'){
-            steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'make publish'
-            }
-        }
-    }
-}
+---
+- name: Example Playbook
+  hosts: <hosts>
+  vars:
+    variable1: value1
+    variable2: value2
+  tasks:
+  - name: Task 1
+    module: module_name
+    arguments:
+      argument1: value1
+      argument2: value2
+  - name: Task 2
+    module: module_name
+    arguments:
+      argument1: value1
+      argument2: value2
+  handlers:
+  - name: Handler 1
+    module: module_name
+    arguments:
+      argument1: value1
+      argument2: value2
